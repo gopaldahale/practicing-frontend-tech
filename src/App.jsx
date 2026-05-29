@@ -1,21 +1,14 @@
 import React from 'react'
-import { useState } from 'react';
+import SearchInput from './components/SearchInput'
+import UseState from './components/UseState'
+import UseReducer from './components/UseReducer'
 
 export default function App() {
-
-  const [count, setCount] = useState(0);
-
-  function handleClick() {
-    setTimeout(() => { setCount(count + 1);}, 2000);
-    setTimeout(() => { console.log(count)}, 2000);
-    
-  }
-
   return (
     <>
-      <button onClick={handleClick}>
-        {count}
-      </button>
+      <SearchInput />
+      <UseState />
+      <UseReducer />
     </>
   )
 }
